@@ -1,0 +1,6 @@
+
+/frontend/
+/backend/**/target/
+target/
+.idea/
+*.yml
