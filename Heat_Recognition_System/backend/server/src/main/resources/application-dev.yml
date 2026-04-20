@@ -1,0 +1,24 @@
+cy:
+  server:
+    port: 8080
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: 47.121.122.255
+    port: 3306
+    database: heat_recognition
+    username: heat_recognition
+    password: 12345678
+
+  alioss:
+    endpoint: oss-cn-wulanchabu.aliyuncs.com
+    access-key-id: LTAI5tRvpQ2EFVpkxmfEV2xi
+    #    access-key-id: ${OSS_ACCESS_KEY_ID}
+    access-key-secret: LvYI6KvwIHzT4LGwrq5wIjYOzSiqsi
+    #    access-key-secret: ${OSS_ACCESS_KEY_SECRET}
+    bucket-name: heat-recognition
+
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 1

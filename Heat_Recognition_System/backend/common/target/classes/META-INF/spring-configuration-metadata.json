@@ -1,0 +1,61 @@
+{
+  "groups": [
+    {
+      "name": "cy.alioss",
+      "type": "com.cy.properties.AliOssProperties",
+      "sourceType": "com.cy.properties.AliOssProperties"
+    },
+    {
+      "name": "cy.jwt",
+      "type": "com.cy.properties.JwtProperties",
+      "sourceType": "com.cy.properties.JwtProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cy.alioss.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.cy.properties.AliOssProperties"
+    },
+    {
+      "name": "cy.alioss.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.cy.properties.AliOssProperties"
+    },
+    {
+      "name": "cy.alioss.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.cy.properties.AliOssProperties"
+    },
+    {
+      "name": "cy.alioss.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.cy.properties.AliOssProperties"
+    },
+    {
+      "name": "cy.jwt.ignore-paths",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.cy.properties.JwtProperties"
+    },
+    {
+      "name": "cy.jwt.secret-key",
+      "type": "java.lang.String",
+      "description": "jwt令牌相关配置",
+      "sourceType": "com.cy.properties.JwtProperties"
+    },
+    {
+      "name": "cy.jwt.token-name",
+      "type": "java.lang.String",
+      "sourceType": "com.cy.properties.JwtProperties"
+    },
+    {
+      "name": "cy.jwt.ttl",
+      "type": "java.lang.Long",
+      "sourceType": "com.cy.properties.JwtProperties"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

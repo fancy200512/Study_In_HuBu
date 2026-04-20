@@ -1,0 +1,1 @@
+const n=t=>String(t).padStart(2,"0"),o=(t=new Date)=>{const e=t.getFullYear(),a=n(t.getMonth()+1),r=n(t.getDate());return`${e}-${a}-${r}`},g=(t=new Date)=>`${t.getMonth()+1}月${t.getDate()}日`,s=t=>{if(!t)return"--";const e=new Date(t);return Number.isNaN(e.getTime())?t:`${o(e)} ${n(e.getHours())}:${n(e.getMinutes())}`};export{o as a,s as f,g};

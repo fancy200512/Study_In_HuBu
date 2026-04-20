@@ -1,0 +1,202 @@
+:root {
+  --el-color-primary: #ff7a18;
+  --el-color-primary-light-3: #ff9838;
+  --el-color-primary-light-5: #ffb676;
+  --el-color-primary-light-7: #ffd2ad;
+  --el-color-primary-dark-2: #e5670d;
+
+  --accent: #ff7a18;
+  --accent-2: #ff9838;
+  --accent-3: #ffb676;
+  --accent-soft: #fff0e1;
+  --text-main: #1f2937;
+  --text-sub: #6b7280;
+  --line-soft: #f1f5f9;
+
+  --page-bg: #fff9f2;
+  --page-bg-strong: #ffe8d2;
+  --card-bg: rgba(255, 255, 255, 0.76);
+  --card-border: rgba(255, 255, 255, 0.94);
+  --card-shadow: 0 16px 38px rgba(31, 41, 55, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text-main);
+  background-color: var(--page-bg);
+  background-image:
+    radial-gradient(circle at 7% 14%, rgba(255, 150, 60, 0.24), transparent 34%),
+    radial-gradient(circle at 92% 12%, rgba(255, 196, 138, 0.35), transparent 31%),
+    radial-gradient(circle at 86% 88%, rgba(255, 132, 32, 0.18), transparent 30%),
+    linear-gradient(145deg, var(--page-bg), var(--page-bg-strong));
+  background-attachment: fixed;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+.glass-effect {
+  background: var(--card-bg) !important;
+  backdrop-filter: blur(20px) saturate(145%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(145%) !important;
+  border: 1px solid var(--card-border) !important;
+  box-shadow: var(--card-shadow) !important;
+}
+
+.el-card {
+  border-radius: 28px !important;
+  background: var(--card-bg) !important;
+  border: 1px solid var(--card-border) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.el-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 42px rgba(31, 41, 55, 0.11) !important;
+}
+
+.el-button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease !important;
+}
+
+.el-button:hover {
+  transform: translateY(-1px);
+}
+
+.el-button--primary:not(.is-link):not(.is-text) {
+  border-color: transparent !important;
+  background: linear-gradient(120deg, var(--accent-2), var(--accent)) !important;
+  box-shadow: 0 10px 24px rgba(255, 122, 24, 0.24) !important;
+}
+
+.el-button--primary:not(.is-link):not(.is-text):hover {
+  background: linear-gradient(120deg, #ffa24f, #ff8228) !important;
+  box-shadow: 0 14px 28px rgba(255, 122, 24, 0.28) !important;
+}
+
+.el-button.is-link.el-button--primary {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #c2410c !important;
+}
+
+.el-button.is-link.el-button--primary:hover {
+  color: #9a3412 !important;
+}
+
+.el-button--danger {
+  box-shadow: 0 8px 18px rgba(239, 68, 68, 0.2) !important;
+}
+
+.el-input__wrapper,
+.el-textarea__inner,
+.el-input-number {
+  border-radius: 14px !important;
+}
+
+.el-input__wrapper {
+  box-shadow: 0 0 0 1px rgba(255, 154, 71, 0.18) inset !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+
+.el-input__wrapper.is-focus {
+  box-shadow: 0 0 0 1px rgba(255, 122, 24, 0.42) inset !important;
+}
+
+.el-radio-button__inner {
+  border-radius: 12px !important;
+}
+
+.el-radio-button.is-active .el-radio-button__inner {
+  background: linear-gradient(120deg, var(--accent-2), var(--accent)) !important;
+  border-color: transparent !important;
+  box-shadow: 0 8px 16px rgba(255, 122, 24, 0.22);
+}
+
+.el-tag--success {
+  --el-tag-bg-color: #fff2e4 !important;
+  --el-tag-border-color: #ffd7b1 !important;
+  --el-tag-text-color: #b45309 !important;
+}
+
+.el-table {
+  --el-table-header-bg-color: rgba(255, 255, 255, 0.65);
+  --el-table-tr-bg-color: transparent;
+  --el-table-border-color: rgba(226, 232, 240, 0.6);
+}
+
+.el-table th.el-table__cell {
+  color: #9a3412;
+  font-weight: 700;
+}
+
+.el-table .el-table__row:hover > td.el-table__cell {
+  background: rgba(255, 244, 235, 0.8) !important;
+}
+
+.el-dialog {
+  border-radius: 26px !important;
+}
+
+.el-popper.is-light {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.12) !important;
+}
+
+.el-dropdown-menu {
+  background-color: transparent !important;
+}
+
+.el-popper.is-light .el-popper__arrow::before {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.32);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes soft-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

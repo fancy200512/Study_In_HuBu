@@ -1,0 +1,1 @@
+import{g as o}from"./user-BgaHMLOJ.js";import{u as n,c as u}from"./index-eNbuvyn8.js";const I=()=>{const e=n(),r=u(()=>Number(e.userInfo.id||e.userInfo.userId||0));return{userStore:e,currentUserId:r,ensureUserLoaded:async()=>{const s=r.value;if(!s)return null;const t=await o(s);return e.setUserInfo(t),t}}};export{I as u};
